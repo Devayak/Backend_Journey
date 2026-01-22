@@ -1,0 +1,4 @@
+server is a machine that is programmed to send the details that are request my user
+
+Deploy server 
+    
