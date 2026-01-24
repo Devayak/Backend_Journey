@@ -1,0 +1,2 @@
+all four pethod 
+tommorrow topic how to solve the issue that on re-render of the server the data is deleted 

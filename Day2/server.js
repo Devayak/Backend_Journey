@@ -1,12 +1,13 @@
 const express=require("express")
 
-const app=express() // server instance create
+const app=express()
 
-//! program to send response on user request
-app.get('/',(req,res)=>{
-    res.send('Hello server is running')
+app.get("/",(req,res)=>{
+    res.send('hello world')
+
 })
 
-app.listen(3000) // server start karna , here we assign the port no so that the os will understand it
-// for one port  will be assign to one server request
-// for some changes in program if we want to do autostart of the server then use npx nodemon
+app.get("/about",(req,res)=>{
+    res.send('This is about page')
+})
+app.listen(3000)
