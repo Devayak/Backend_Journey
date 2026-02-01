@@ -1,0 +1,22 @@
+in mongodb atlass 
+create a cluster ( is combination of storage + processor) it can contain multiple databases 
+then make it seure there are two layer of security 
+1. databse user 
+2.network access 
+
+summary in server created cluster ,tell which ip address can connect created a user who can do what as per in db 
+
+in compass 
+create a new connection uri (in atlass connect take uri)
+
+mongoose package to connect with database 
+function connectToDb(){
+    mongoose.connect('mongodb+srv://debasish:32YmghSLG4EbwLfO@cluster0.f01kdhu.mongodb.net/day-7')
+} //? coonect to database if present or else create 
+
+in production the function to connect with databse will not be in server.js for that in src config folder export that and require it in server.js 
+
+database rule- 
+    user have to say in which data and in which format data to be store 
+    schema- format in which the user want to store data in database 
+    to do any operation use model  

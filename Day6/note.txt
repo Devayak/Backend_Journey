@@ -1,0 +1,1 @@
+with the hepl of mongoose package we get connect the server with the database 
