@@ -1,0 +1,9 @@
+npm run build to have css html js  ,optimised static file now no react is needed express can run it as a normal site 
+move it to backend folder name public  - files can be served to direct browser 
+in that use :-
+app.use(express.static('./public'))  :-If browser asks for a file, check the public folder.
+app.use('*name',(req,res)=>{
+     res.sendFile(path.join(__dirname,"..","/public/index.html")) //React handles routing internally.
+})
+
+const path=require('path')
