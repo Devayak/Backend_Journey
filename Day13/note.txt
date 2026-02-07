@@ -1,0 +1,9 @@
+
+Authentication - identify request kis user se ayi hai
+
+
+authorization - user kya kya kar sakta hai wo authorization hota hai
+
+validation - to check the data format
+
+verification - check that data given is correct or not
