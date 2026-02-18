@@ -65,7 +65,15 @@ authRouter.post("/login",async(req,res)=>{
     })
 })
 
-
+authRouter.post("/logout",async(req,res)=>{
+  res.clearCookie("jwt_token",{
+    httpOnly:true,//protection
+    sameSite:"strict"// only for protection
+  });
+  res.status(200).json({
+    message:"logged out"
+  })
+})
 module.exports = authRouter;
 
 /**
