@@ -1,0 +1,12 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5vh;
+    padding-block: 2vw;
+
+    h2{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+}
